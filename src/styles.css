@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: linear-gradient(135deg, #646b6f, #6c7c7c);
+    color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+header img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de Servicios */
+#servicios {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#servicios h2 {
+    color: #004d99;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#servicios .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#servicios .card:hover {
+    transform: translateY(-5px);
+}
+
+#servicios .card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+#servicios .card-title {
+    color: #004d99;
+    font-weight: 600;
+    
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#sobre-nosotros h2 {
+    color: #004d99;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#sobre-nosotros img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+}
+
+#sobre-nosotros p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    background-color: #f8f9fa;
+}
+#sobre-nosotros div{
+    background-color: #f8f9fa;
+}
+
+/* Sección de Contacto */
+#contacto {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+#contacto h2 {
+    color: #004d99;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contacto img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contacto h5 {
+    color: #004d99;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #004d99;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #servicios h2, #sobre-nosotros h2, #contacto h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+} 
