@@ -6,6 +6,59 @@ body {
     line-height: 1.6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+/* Menú de Navegación */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Encabezado */
+header {
+    padding-top: 100px;
+    background: linear-gradient(135deg, #004d99, #0066cc);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Tarjetas de Servicios */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulario de Contacto */
+form .form-control {
+    border-radius: 10px;
+}
+
+form .btn {
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+}
+
 /* Encabezado */
 header {
     background: linear-gradient(135deg, #004d99, #0066cc);
