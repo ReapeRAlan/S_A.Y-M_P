@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones en Automatización y Mejora de Procesos</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Lato:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/styles.css">
     <link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Partículas de Fondo -->
+    <div id="particles-js"></div>
+
     <!-- Menú de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand font-weight-bold" href="#">Automatización y Procesos</a>
+            <a class="navbar-brand font-weight-bold" href="#">
+                <i class="fas fa-cogs mr-2 spin-slow"></i>Automatización y Procesos
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -28,61 +40,91 @@
     </nav>
 
     <!-- Header Section -->
-    <header class="bg-primary text-white text-center py-5">
+    <header class="text-white text-center">
         <div class="container">
-            <img src="src/img/1.jpg" alt="Imagen Header" class="img-fluid mb-4 rounded shadow-lg">
-            <h1 class="display-4 font-weight-bold">Soluciones en Automatización y Mejora de Procesos</h1>
-            <p class="lead">Transformamos tus operaciones con tecnología de vanguardia.</p>
-            <a href="#servicios" class="btn btn-light btn-lg mt-3">Ver Servicios</a>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+                    <img src="src/img/1.jpg" alt="Imagen Header" class="img-fluid mb-4 rounded-lg header-img">
+                </div>
+                <div class="col-lg-6 text-left" data-aos="fade-left" data-aos-duration="1200">
+                    <h1 class="display-4 font-weight-bold slide-in-right">Soluciones en <span class="gradient-text">Automatización</span> y Mejora de Procesos</h1>
+                    <p class="lead mb-4 slide-in-right-delay">s</p>
+                    <a href="#servicios" class="btn btn-primary btn-lg mt-3 pulse-btn">
+                        <i class="fas fa-arrow-right mr-2"></i>Ver Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,117.3C672,107,768,117,864,138.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
     </header>
 
     <!-- Servicios Section -->
-    <section id="servicios" class="container py-5">
-        <div class="text-center mb-5">
-            <h2 class="display-5 font-weight-bold">Nuestros Servicios</h2>
-            <p class="text-muted">Descubre cómo podemos ayudarte a optimizar tus procesos.</p>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="src/img/4.jpg" alt="Automatización de Procesos Industriales" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Automatización Industrial</h5>
-                        <p class="card-text">Optimizamos procesos industriales con soluciones personalizadas.</p>
-                        <ul class="list-unstyled">
-                            <li>✔️ Integración de PLC y SCADA</li>
-                            <li>✔️ Control de calidad automatizado</li>
-                            <li>✔️ Monitoreo remoto</li>
-                        </ul>
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title-container">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                </div>
+                <p class="text-muted">Descubre cómo podemos ayudarte a optimizar tus procesos.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card h-100">
+                        <div class="card-img-container">
+                            <img src="src/img/4.jpg" alt="Automatización de Procesos Industriales" class="card-img-top">
+                            <div class="card-overlay">
+                                <i class="fas fa-industry icon-overlay"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold"><i class="fas fa-cogs mr-2 text-primary"></i>Automatización Industrial</h5>
+                            <p class="card-text">Optimizamos procesos industriales con soluciones personalizadas.</p>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Integración de PLC y SCADA</li>
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Control de calidad automatizado</li>
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Monitoreo remoto</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="src/img/3.jpg" alt="Mejora de Procesos Empresariales" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Mejora de Procesos</h5>
-                        <p class="card-text">Implementamos sistemas inteligentes para optimizar operaciones.</p>
-                        <ul class="list-unstyled">
-                            <li>✔️ Digitalización de flujos de trabajo</li>
-                            <li>✔️ Optimización de cadenas de suministro</li>
-                            <li>✔️ Integración de ERP y CRM</li>
-                        </ul>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card h-100">
+                        <div class="card-img-container">
+                            <img src="src/img/3.jpg" alt="Mejora de Procesos Empresariales" class="card-img-top">
+                            <div class="card-overlay">
+                                <i class="fas fa-chart-line icon-overlay"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold"><i class="fas fa-chart-bar mr-2 text-primary"></i>Mejora de Procesos</h5>
+                            <p class="card-text">Implementamos sistemas inteligentes para optimizar operaciones.</p>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Digitalización de flujos de trabajo</li>
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Optimización de cadenas de suministro</li>
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Integración de ERP y CRM</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="src/img/2.jpg" alt="Innovación Tecnológica" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Innovación Tecnológica</h5>
-                        <p class="card-text">Desarrollamos proyectos de transformación digital.</p>
-                        <ul class="list-unstyled">
-                            <li>✔️ Soluciones IoT</li>
-                            <li>✔️ Automatización robótica (RPA)</li>
-                            <li>✔️ Inteligencia Artificial</li>
-                        </ul>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card h-100">
+                        <div class="card-img-container">
+                            <img src="src/img/2.jpg" alt="Innovación Tecnológica" class="card-img-top">
+                            <div class="card-overlay">
+                                <i class="fas fa-robot icon-overlay"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold"><i class="fas fa-microchip mr-2 text-primary"></i>Innovación Tecnológica</h5>
+                            <p class="card-text">Desarrollamos proyectos de transformación digital.</p>
+                            <ul class="list-unstyled feature-list">
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Soluciones IoT</li>
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Automatización robótica (RPA)</li>
+                                <li><i class="fas fa-check-circle text-success mr-2"></i>Inteligencia Artificial</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,63 +132,320 @@
     </section>
 
     <!-- Sobre Nosotros Section -->
-    <section id="sobre-nosotros" class="bg-light py-5">
+    <section id="sobre-nosotros" class="py-5">
+        <div class="wave-container-top">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,224C384,224,480,160,576,133.3C672,107,768,117,864,133.3C960,149,1056,171,1152,165.3C1248,160,1344,128,1392,112L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </div>
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 font-weight-bold">Sobre Nosotros</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title-container">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="src/img/5.jpg" alt="Sobre Nosotros" class="img-fluid rounded shadow-lg">
+                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-img-container">
+                        <img src="src/img/5 copy.jpg" alt="Sobre Nosotros" class="img-fluid rounded-lg about-img">
+                        <div class="floating-badge">10+ años de experiencia</div>
+                    </div>
                 </div>
-                <div class="col-md-6 mt-4 mt-md-0">
-                    <p class="lead">Somos una empresa líder en soluciones de automatización y mejora de procesos. Con más de 10 años de experiencia, transformamos operaciones para mejorar la eficiencia y competitividad de nuestros clientes.</p>
-                    <p>Nuestro enfoque se basa en un análisis detallado y la implementación de tecnologías de vanguardia.</p>
+                <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <p class="lead">Somos una empresa líder en soluciones de automatización y mejora de procesos. Con más de 10 años de experiencia, transformamos operaciones para mejorar la eficiencia y competitividad de nuestros clientes.</p>
+                        <p>Nuestro enfoque se basa en un análisis detallado y la implementación de tecnologías de vanguardia.</p>
+                        <div class="counter-container row mt-5">
+                            <div class="col-md-4 mb-4">
+                                <div class="counter-item text-center">
+                                    <div class="counter" data-count="200">0</div>
+                                    <p>Proyectos completados</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="counter-item text-center">
+                                    <div class="counter" data-count="98">0</div>
+                                    <p>Clientes satisfechos</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="counter-item text-center">
+                                    <div class="counter" data-count="10">0</div>
+                                    <p>Años de experiencia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="wave-container-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L48,144C96,160,192,192,288,186.7C384,181,480,139,576,138.7C672,139,768,181,864,186.7C960,192,1056,160,1152,138.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
     </section>
 
     <!-- Contacto Section -->
-    <section id="contacto" class="container py-5">
-        <div class="text-center mb-5">
-            <h2 class="display-5 font-weight-bold">Contacto</h2>
-            <p class="text-muted">Hablemos de tu proyecto.</p>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form action="https://formspree.io/f/xpwqldkg" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-title-container">
+                    <h2 class="section-title">Contacto</h2>
+                </div>
+                <p class="text-muted">Hablemos de tu proyecto.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <form action="https://formspree.io/f/xpwqldkg" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    </div>
+                                    <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-comment"></i></span>
+                                    </div>
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane mr-2"></i>Enviar Mensaje
+                            </button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="col-md-5 offset-md-1 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <h4 class="mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Información de contacto</h4>
+                        <ul class="list-unstyled contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Circuito Soberano Maya #149, Col. Sendero de los Quetzales, 20358, San Francisco de los Romo, Aguascalientes, México</li>
+                            <li><i class="fas fa-phone"></i> 449-125-4367</li>
+                            <li><i class="fas fa-envelope"></i> contacto@cyvconsultoria.com</li>
+                            <li><i class="fas fa-id-card"></i> RFC: CACJ780301GN6</li>
+                        </ul>
+                        <div class="social-icons mt-4">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <textarea name="message" class="form-control" rows="5" placeholder="Mensaje" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-white text-center py-4">
         <div class="container">
-            <p class="mb-1">&copy; 2024 Automatización y Procesos. Todos los derechos reservados.</p>
-            <p class="mb-1">Servicios de Ingeniería C&V</p>
-            <p class="mb-1">Circuito Soberano Maya #149, Col. Sendero de los Quetzales, 20358</p>
-            <p class="mb-1">San Francisco de los Romo, Aguascalientes, México</p>
-            <p class="mb-1">RFC: VIGL781004GHI | Razón Fiscal: Servicios Profesionales de Ingeniería</p>
-            <p class="mb-1">Correo: <a href="mailto:contacto@cyvconsultoria.com" class="text-white">contacto@cyvconsultoria.com</a> | Tel: 477-918-9259</p>
-            
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="fas fa-cogs mr-2"></i>Automatización y Procesos</h5>
+                    <p class="mb-0">Transformando empresas a través de la innovación tecnológica y mejora continua.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3">Enlaces rápidos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Información legal</h5>
+                    <p class="mb-0">&copy; 2024 Automatización y Procesos</p>
+                    <p class="mb-0">Servicios de Ingeniería C&V</p>
+                    <p class="mb-0">Todos los derechos reservados.</p>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+
+        // Partículas JS (efecto visual en el header)
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Contador animado
+        $('.counter').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
+            {
+                duration: 2000,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                }
+            });
+        });
+
+        // Smooth scroll
+        $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
+            }
+        });
+
+        // Cambiar estilo de navegación al hacer scroll
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('navbar-scrolled');
+                $('.back-to-top').fadeIn();
+            } else {
+                $('.navbar').removeClass('navbar-scrolled');
+                $('.back-to-top').fadeOut();
+            }
+        });
+
+        // Back to top button
+        $('.back-to-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+    </script>
 </body>
 </html>
